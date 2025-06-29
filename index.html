@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Faisal Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</body>
+</html>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar Rata Tengah Responsif -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top blur-navbar">
+  <div class="container-fluid justify-content-center">
+
+    <!-- Tombol toggle untuk layar kecil -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu navbar -->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav gap-lg-4 gap-2 text-center">
+        <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+        <li class="nav-item"><a class="nav-link" href="#portofolio">Portofolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Hero Section -->
+
+  <section id="hero" class="vh-100 d-flex align-items-center justify-content-center text-center position-relative overflow-hidden" data-aos="zoom-out-up">
+    <div class="video-bg">
+    <video autoplay muted loop playsinline id="heroVideo">
+      <source src="bumi.mp4" type="video/mp4">
+    </video>
+  </div>
+    <canvas id="star-canvas" class="position-absolute top-0 start-0 w-100 h-100 z-1"></canvas>
+    
+
+    <div class="tool-floating-icons">
+  <img src="logo/image 68.svg" class="tool-icon-floating" style="top: 20%; left: 20%;">
+  <img src="logo/image 69.svg" class="tool-icon-floating" style="top: 50%; left: 10%;">
+  <img src="logo/image 71.svg" class="tool-icon-floating" style="top: 60%; left: 80%;">
+  <img src="logo/image 74.svg" class="tool-icon-floating" style="top: 20%; left: 73%;">
+  <img src="logo/image 72.svg" class="tool-icon-floating" style="top: 80%; left: 40%;">
+</div>
+
+
+
+  <div class="container content position-relative z-1">
+
+    <h1 class="hero-title">
+      <span id="scramble-text" class="highlight"></span>
+    </h1>
+
+    <p class="subtitle">Desainer/Videografer/Fotografer/3dmodels/Frontend</p>
+
+    <a href="#tentang" class="btn btn-glow mt-4">Get Started <span>→</span></a>
+  </div>
+</section>
+
+
+
+
+
+
+  <!-- Section 2: Tentang Saya -->
+
+  <!-- SECTION 3: TENTANG SAYA -->
+<section id="tentang" class="section_tentang text-white">
+  <div class="container">
+    <h2 class="text-center mb-5 neon-text fs-1" data-aos="zoom-out-up" data-aos-duration="900" data-aos-delay="100">Tentang Saya</h2>
+
+    <div class="row align-items-center g-4">
+
+      <!-- Foto Profil -->
+      <div class="foto-container p-0 mt-4" data-aos="flip-up" data-aos-duration="900" data-aos-delay="100" id="tilt-container">
+     <!-- <img src="img/singapore.jpg" alt=""> -->
+      <video autoplay muted loop playsinline>
+    <source src="ae1.mp4" type="video/mp4">
+  </video>
+    </div>
+
+      <!-- Deskripsi -->
+      <div class="col-md-8" data-aos="fade-up" data-aos-duration="900" data-aos-delay="300">
+        <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between">
+          <div>
+            <h4 class="text-white">Faisal Adi Saputra</h4>
+            <p>
+              Saya adalah seorang <strong>Desainer Grafis</strong> dan <strong>Videografer</strong> yang berdedikasi untuk menciptakan karya visual yang berkesan, estetis, dan efektif. Saya berpengalaman dalam desain branding, konten media sosial, hingga video komersial berdurasi pendek.
+            </p>
+            <p>
+              Menggunakan pendekatan kreatif dan detail, saya percaya desain bukan hanya visual, tapi juga cara menyampaikan cerita.
+            </p>
+          </div>
+
+            <div class="mt-4">
+              <p class="text-white mb-2 fw-semibold mb-4">Software yang saya gunakan:</p>
+              <div class="d-flex flex-wrap gap-3 ">
+                <img src="logo/image 72.svg" alt="CapCut" class="tool-icon" title="CapCut">
+                <img src="logo/image 68.svg" alt="Premiere" class="tool-icon" title="Adobe Premiere Pro">
+                <img src="logo/image 69.svg" alt="After Effects" class="tool-icon" title="After Effects">
+                <img src="logo/image 70.svg" alt="Figma" class="tool-icon" title="Figma">
+                <img src="logo/image 71.svg" alt="CapCut" class="tool-icon" title="CapCut">
+                <img src="logo/image 74.svg" alt="CapCut" class="tool-icon" title="CapCut">
+                <img src="logo/Group 688313654.svg" alt="Photoshop" class="tool-icon" title="Adobe Photoshop">
+            </div>
+
+          <div class="mt-3">
+            <a href="assets/CV-FaisalAdiSaputra.pdf" class="btn btn-outline-warning w-100" target="_blank">Download CV</a>
+          </div>
+          <!-- Icon Software -->
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- My Project -->
+
+<section class="my-projects py-5">
+  <div class="container">
+    <h2 class="text-center mb-5 neon-text fs-1" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="200">My Project</h2>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-4">
+        <div class="card-glass text-white p-4 text-center" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+          <h4 class="mb-3">Brand Identity</h4>
+          <p>Desain logo, layout buku, dan panduan branding profesional.</p>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="500">
+        <div class="card-glass text-white p-4 text-center">
+          <h4 class="mb-3">Videography</h4>
+          <p>Project video dokumentasi, promosi, dan konten cinematic.</p>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="900">
+        <div class="card-glass text-white p-4 text-center">
+          <h4 class="mb-3">3D & Visual</h4>
+          <p>Projek eksplorasi Blender, motion graphic dan visual scene.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- Sponsor -->
+  <!-- <h6 class="text-white text-center mb-3 mt-5">I've Collaborated with Companies</h6>
+  <section class="sponsor-carousel pt-3 pb-3">
+    <div class="container overflow-hidden">
+      <div class="carousel-wrapper" id="carouselWrapper">
+        <div class="carousel-track d-flex align-items-center" id="sponsorTrack">
+          <img src="Contribusi/1. Logo NN baru 1.svg" class="mx-4 sponsor-logo" alt="Sponsor 1">
+          <img src="Contribusi/1748231189503.svg" class="mx-4 sponsor-logo" alt="Sponsor 2">
+          <img src="Contribusi/Desain tanpa judul (1) (Traced).svg" class="mx-4 sponsor-logo" alt="Sponsor 3">
+          <img src="Contribusi/Group 1.svg" class="mx-4 sponsor-logo" alt="Sponsor 4">
+          <img src="Contribusi/Group 3.svg" class="mx-4 sponsor-logo" alt="Sponsor 5">
+          <img src="Contribusi/Group 688313479.svg" class="mx-4 sponsor-logo" alt="Sponsor 6">
+          <img src="Contribusi/Group 688313610.svg" class="mx-4 sponsor-logo" alt="Sponsor 7">
+          <img src="Contribusi//Group 688313655.svg" class="mx-4 sponsor-logo" alt="Sponsor 8">
+          <img src="Contribusi/Group 688313656.svg" class="mx-4 sponsor-logo" alt="Sponsor 9">
+          <img src="Contribusi/Group.svg" class="mx-4 sponsor-logo" alt="Sponsor 10">
+          <img src="Contribusi/image 76.svg" class="mx-4 sponsor-logo" alt="Sponsor 11">
+          <img src="Contribusi/image 77.svg" class="mx-4 sponsor-logo" alt="Sponsor 12">
+          <img src="Contribusi/image_33-removebg-preview 3.svg" class="mx-4 sponsor-logo" alt="Sponsor 13">
+          <img src="Contribusi/IMG_20250525_184400_399.svg" class="mx-4 sponsor-logo" alt="Sponsor 14">
+          <img src="Contribusi/Layer0_0_FILL.svg" class="mx-4 sponsor-logo" alt="Sponsor 15">
+          <img src="Contribusi/WhatsApp Image 2025-04-14 at 17.26.34_039e9a93 1.svg" class="mx-4 sponsor-logo" alt="Sponsor 16">
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+
+
+
+
+<!-- Section 2: Portofolio Designer -->
+
+
+ <section class="auto-carousel py-5">
+  <div class="carousel-track">
+    <div class="carousel-card"><img src="img/postingan auto200.svg" alt="1" /></div>
+    <div class="carousel-card"><img src="img/postingan bamboo.svg" alt="2" /></div>
+    <div class="carousel-card"><img src="img/postingan glo fast.png" alt="4" /></div>
+    <div class="carousel-card"><img src="img/postingan toyota.svg" alt="5" /></div>
+     <div class="carousel-card"><img src="img/postingan tiktok.png" alt="6" /></div>
+    <div class="carousel-card"><img src="img/postingan lialang.svg" alt="7" /></div>
+    <!-- Duplikat untuk loop halus -->
+    <div class="carousel-card"><img src="img/postingan sentosa.svg" alt="8" /></div>
+    <div class="carousel-card"><img src="img/postingan mclen.svg" alt="9" /></div>
+     <div class="carousel-card"><img src="img/postingan qurban.svg" alt="10" /></div>
+    <div class="carousel-card"><img src="img/postingan wuling.svg" alt="11" /></div>
+      <div class="carousel-card"><img src="img/ninetyine.png" alt="11" /></div>
+  </div>
+</section>
+
+
+<!-- Mockup Section -->
+<section  id="portofolio" class="angled-carousel py-5">
+  <div class="container position-relative">
+    <h2 class="text-white text-center mb-5">Mockup & Layouting Books</h2>
+    <div class="row justify-content-center gap-4 mb-5">
+      <div class="col-md-3 card-glass tilted-card">
+        <img src="img/tiktok afiliate.png" class="img-fluid rounded" alt="Slide 1">
+      </div>
+      <div class="col-md-3 card-glass tilted-card">
+        <img src="mockup/id card me.png" class="img-fluid rounded" alt="Slide 2">
+      </div>
+      <div class="col-md-3 card-glass tilted-card">
+        <img src="mockup/banner7.png" class="img-fluid rounded" alt="Slide 3">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="container py-5">
+    <div class="row align-items-center">
+
+      <!-- KIRI -->
+      <div class="col-lg-6 mb-4">
+        <div class="glass-cardmockup p-4 mb-4">
+          <h1 class="fw-bold">BRAND SKIESHOP</h1>
+          <p>Proyek mockup ini memastikan konsistensi visual SKIE SHOP, menampilkan logo dan 
+            elemen desain secara seragam di berbagai merchandise dan kemasan untuk memperkuat citra brand.</p>
+        </div>
+
+        <div class="d-flex gap-3 flex-wrap mb-4">
+          <div class="glass-cardmockup p-3">
+            <img src="mockup/logo merah.svg" alt="Logo 1" class="img-fluid" width="60" />
+          </div>
+          <div class="glass-cardmockup p-3">
+            <img src="mockup/logo putih.svg" alt="Logo 2" class="img-fluid" width="60" />
+          </div>
+          <div class="glass-cardmockup px-4 gap-3 py-1 d-flex align-items-center">
+            <img src="/mockup/logo skieshop.svg" alt="Logo Icon" width="120" class="me-2" />
+            <span class="fw-bold">SKIE SHOP</span>
+          </div>
+        </div>
+
+        <div class="d-flex gap-3 flex-wrap">
+          <div class="mockup p-2">
+            <img src="mockup/bag.png" alt="Tote Bag" class="img-fluid rounded" width="220" />
+          </div>
+          <div class="mockup p-2">
+            <img src="mockup/card.png" alt="Kartu Nama" class="img-fluid rounded" width="270" />
+          </div>
+        </div>
+      </div>
+
+      <!-- KANAN -->
+      <div class="col-lg-6 text-center position-relative overflow-visible">
+  <div class="glass-frame position-relative">
+    <img src="mockup/bajuu.svg" alt="Kaos" class="mockup-shirt" />
+  </div>
+</div>
+    </div>
+  </section>
+
+
+
+<!-- SECTION: Gallery A4 -->
+<section class="container py-5">
+  <div class="a4container row align-items-center">
+    <!-- KIRI (Gambar besar) -->
+    <div class="col-lg-6 mb-4">
+      <div class="glass-a4 p-4 text-center" style="aspect-ratio: 3/4;">
+       <img src="mockup/a4.png" alt="Mockup Besar" class="display-photo mb-3">
+      </div>
+    </div>
+
+    <!-- KANAN (Title & Grid A4 kecil) -->
+    <div class="col-lg-6">
+      <div class="mb-4">
+        <h2 class="fw-bold"></h2>
+        <p></p>
+      </div>
+
+      <!-- Grid 7 kotak -->
+      <div class="d-flex flex-wrap gap-3">
+        <!-- 6 kotak ukuran A4 -->
+        <div class="glass-card a4-box">
+          <img src="mockup/1.jpg" alt="Mockup A4" class="img-a4">
+        </div>
+        <div class="glass-card a4-box">
+          <img src="mockup/2.jpg" alt="Mockup A4" class="img-a4">
+        </div>
+        <div class="glass-card a4-box">
+          <img src="mockup/3.jpg" alt="Mockup A4" class="img-a4">
+        </div>
+        <div class="glass-card a4-box">
+          <img src="mockup/4.jpg" alt="Mockup A4" class="img-a4">
+        </div>
+        <div class="glass-card a4-box">
+          <img src="mockup/5.jpg" alt="Mockup A4" class="img-a4">
+        </div>
+        <div class="glass-card a4-box">
+          <img src="mockup/6.jpg" alt="Mockup A4" class="img-a4">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="container py-5">
+  <div class="a4container row align-items-center">
+    <!-- KIRI (Gambar besar) -->
+    <div class="col-lg-6 mb-4">
+      <div class="glass-a4 p-4 text-center" style="aspect-ratio: 3/4;">
+       <img src="mockup/banner7.png" alt="Mockup Besar" class="display-booth mb-3">
+      </div>
+    </div>
+
+    <!-- KANAN (Title & Grid A4 kecil) -->
+    <div class="col-lg-6">
+      <div class="mb-4">
+        <h2 class="fw-bold"></h2>
+        <p></p>
+      </div>
+
+      <!-- Grid 7 kotak -->
+      <div class="d-flex flex-wrap gap-3">
+        <!-- 6 kotak ukuran A4 -->
+        <div class="glass-card a4-box">
+          <img src="mockup/banner1.png" alt="Mockup A4" class="img-a4">
+        </div>
+        <div class="glass-card a4-box">
+          <img src="mockup/banner2.png" alt="Mockup A4" class="img-a4">
+        </div>
+        <div class="glass-card a4-box">
+          <img src="mockup/banner3.png" alt="Mockup A4" class="img-a4">
+        </div>
+        <div class="glass-card a4-box">
+          <img src="mockup/banner4.png" alt="Mockup A4" class="img-a4">
+        </div>
+        <div class="glass-card a4-box">
+          <img src="mockup/banner5.png" alt="Mockup A4" class="img-a4">
+        </div>
+        <div class="glass-card a4-box">
+          <img src="mockup/banner6.png" alt="Mockup A4" class="img-a4">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- videooo project -->
+
+<section id="project-video" class="py-5">
+
+  <div class="container py-5">
+  <h2 class="text-white text-center mb-5">Project Video</h2>
+  
+  <div class="row">
+    
+    <div class="col-3 mb-4">
+      <video src="video/video1.mp4" controls width="100%"></video>
+    </div>
+
+    <div class="col-3 mb-4">
+      <video src="video/video3.mp4" controls width="100%"></video>
+    </div>
+
+    <div class="col-3 mb-4">
+      <video src="video/video4.mp4" controls width="100%"></video>
+    </div>
+
+    <div class="col-3 mb-4">
+      <video src="video/video5.mp4" controls width="100%"></video>
+    </div>
+
+    <div class="col-3 mb-4">
+      <video src="video/video6.mp4" controls width="100%"></video>
+    </div>
+
+    <div class="col-3 mb-4">
+      <video src="video/video7.mp4" controls width="100%"></video>
+    </div>
+
+    <div class="col-3 mb-4">
+      <video src="video/video2.mp4" controls width="100%"></video>
+    </div>
+
+    <div class="col-3 mb-4">
+      <video src="video/video9.mp4" controls width="100%"></video>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+  <div class="container py-5">
+  
+   <div class="row">
+    
+    <div class="col-3 mb-4">
+      <video src="video/videos1.mp4" controls width="100%"></video>
+    </div>
+
+    <div class="col-3 mb-4">
+      <video src="video/videos2.mp4" controls width="100%"></video>
+    </div>
+
+    <div class="col-3 mb-4">
+      <video src="video/videos3.mp4" controls width="100%"></video>
+    </div>
+
+    <div class="col-3 mb-4">
+      <video src="video/videos4.mp4" controls width="100%"></video>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- -=========================video landscape -->
+
+
+  <div class="container">
+    
+    <div class="row">
+      
+      <div class="col-6 col-md-4 col-lg-3 mb-4">
+        <div class="ratio ratio-16x9">
+          <video src="video/videol1.mp4" controls></video>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3 mb-4">
+        <div class="ratio ratio-16x9">
+          <video src="video/videol2.mp4" controls></video>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3 mb-4">
+        <div class="ratio ratio-16x9">
+          <video src="video/videol3.mp4" controls></video>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3 mb-4">
+        <div class="ratio ratio-16x9">
+          <video src="video/videol4.mp4" controls></video>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- start partner -->
+
+<section class="partners-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">
+                        <span>Our Trusted Partners</span>
+                    </h2>
+                </div>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="partner-logo-box">
+                        <div class="partner-logo">
+                            <img src="logo/dpop.svg" alt="Lippo Group Logo">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="partner-logo-box">
+                        <div class="partner-logo">
+                            <img src="logo//auto2000.svg" alt="L'Oreal Logo">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="partner-logo-box">
+                        <div class="partner-logo">
+                            <img src="logo/sinar banten.svg" alt="BSI Logo">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="partner-logo-box">
+                        <div class="partner-logo">
+                             <img src="logo/sentosa.svg" alt="Prose Saint Logo">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="partner-logo-box">
+                        <div class="partner-logo">
+                             <img src="logo/bamboo.svg" alt="Mujigae Logo">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="partner-logo-box">
+                        <div class="partner-logo">
+                            <img src="logo/lialang.svg" alt="Dekoruma Logo">
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-6 col-md-4 col-lg-2">
+                    <div class="partner-logo-box">
+                        <div class="partner-logo">
+                            <img src="logo/bread.svg" alt="Bera Market Logo">
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-6 col-md-4 col-lg-2">
+                    <div class="partner-logo-box">
+                        <div class="partner-logo">
+                            <img src="logo/ponpes.svg" alt="Prospero Logo">
+                        </div>
+                    </div>
+                </div>
+                  <div class="col-6 col-md-4 col-lg-2">
+                    <div class="partner-logo-box">
+                        <div class="partner-logo">
+                            <img src="logo/wulling.svg" alt="Prospero Logo">
+                        </div>
+                    </div>
+                </div>
+                  <div class="col-6 col-md-4 col-lg-2">
+                    <div class="partner-logo-box">
+                        <div class="partner-logo">
+                            <img src="logo/ninetynine.svg" alt="Prospero Logo">
+                        </div>
+                    </div>
+                </div>
+                  <div class="col-6 col-md-4 col-lg-2">
+                    <div class="partner-logo-box">
+                        <div class="partner-logo">
+                            <img src="logo/tiktok shop.svg" alt="Prospero Logo">
+                        </div>
+                    </div>
+                </div>
+                   <div class="col-6 col-md-4 col-lg-2">
+                    <div class="partner-logo-box">
+                        <div class="partner-logo">
+                            <img src="logo/ochiken.svg" alt="Prospero Logo">
+                        </div>
+                    </div>
+                </div>
+                  <div class="col-6 col-md-4 col-lg-2">
+                    <div class="partner-logo-box">
+                        <div class="partner-logo">
+                            <img src="logo/abc.svg" alt="Prospero Logo">
+                        </div>
+                    </div>
+                </div>
+                  <div class="col-6 col-md-4 col-lg-2">
+                    <div class="partner-logo-box">
+                        <div class="partner-logo">
+                            <img src="logo/wulling.svg" alt="Prospero Logo">
+                        </div>
+                    </div>
+                </div>
+                  <div class="col-6 col-md-4 col-lg-2">
+                    <div class="partner-logo-box">
+                        <div class="partner-logo">
+                            <img src="logo/mad project.svg" alt="Prospero Logo">
+                        </div>
+                    </div>
+                </div>
+                  <div class="col-6 col-md-4 col-lg-2">
+                    <div class="partner-logo-box">
+                        <div class="partner-logo">
+                            <img src="logo/aaoc.svg" alt="Prospero Logo">
+                        </div>
+                    </div>
+                </div>
+                  <div class="col-6 col-md-4 col-lg-2">
+                    <div class="partner-logo-box">
+                        <div class="partner-logo">
+                            <img src="logo/glo flast.svg" alt="Prospero Logo">
+                        </div>
+                    </div>
+                </div>
+                  <div class="col-6 col-md-4 col-lg-2">
+                    <div class="partner-logo-box">
+                        <div class="partner-logo">
+                            <h1 class="partner-more">more +</h1>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+<!-- end partner -->
+
+
+
+
+
+<!-- SECTION 4: HUBUNGI SAYA DENGAN GAMBAR -->
+<section id="kontak" class="py-5 glass-section text-white">
+  <div class="container">
+    <h2 class="text-center mb-5 neon-text fs-1">Hubungi Saya</h2>
+
+    <div class="row align-items-center g-4">
+      <!-- Konten Kontak -->
+      <div class="col-md-6">
+        <div class="glass-card p-4 text-center text-md-start h-100 d-flex flex-column justify-content-between">
+          <p class="mb-4">
+            Tertarik bekerja sama atau punya pertanyaan? Silakan hubungi saya melalui platform berikut:
+          </p>
+
+          <div class="d-flex flex-column gap-3">
+            <a href="mailto:faithskiestudio@gmail.com" class="btn btn-outline-warning w-100">
+              <i class="bi bi-envelope-fill me-2"></i>Email
+            </a>
+            <a href="https://wa.me/6289529916805" class="btn btn-outline-warning w-100" target="_blank">
+              <i class="bi bi-whatsapp me-2"></i>WhatsApp
+            </a>
+            <a href="https://www.instagram.com/faisaladiiii_?igsh=MW1hbngxMmh6aDM5cQ%3D%3D&utm_source=qr" class="btn btn-outline-warning w-100" target="_blank">
+              <i class="bi bi-instagram me-2"></i>Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gambar di Sebelah Kanan -->
+      <div class="col-md-6 text-center">
+        <img src="img/logo.png" alt="Ilustrasi Kontak" class="img-fluid rounded-4 shadow-lg" style="max-height: 420px; object-fit: contain;">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- footer -->
+
+<!-- FOOTER LENGKAP -->
+<footer class="footer-custom text-dark pt-5 pb-4 mt-5">
+  <div class="container">
+    <div class="row gy-4 text-center text-md-start">
+
+      <!-- Kolom 1: Logo + Deskripsi -->
+      <div class="col-md-4">
+        <div class="d-flex align-items-center justify-content-center justify-content-md-start mb-2">  
+          <div>
+            <h5 class="mb-3 fw-bold">Faisal Studio</h5>
+            <small class="text-muted">Desain kreatif & video produksi untuk personal dan bisnis Anda. Menciptakan visual yang berbicara.</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kolom 2: Menu Navigasi -->
+      <div class="col-md-4">
+        <h6 class="mb-3 fw-bold">Menu</h6>
+        <ul class="list-unstyled">
+          <li><a href="#hero" class="text-dark text-decoration-none">Home</a></li>
+          <li><a href="#tentang" class="text-dark text-decoration-none">Tentang</a></li>
+          <li><a href="#portofolio" class="text-dark text-decoration-none">Portofolio</a></li>
+          <li><a href="#kontak" class="text-dark text-decoration-none">Kontak</a></li>
+        </ul>
+      </div>
+
+      <!-- Kolom 3: Kontak & Sosmed -->
+      <div class="col-md-4">
+        <h6 class="mb-3 fw-bold">Kontak</h6>
+        <p class="mb-1"><i class="bi bi-geo-alt-fill me-2"></i>Jalan Raya Serang Sentul, Serang, Banten</p>
+        <p class="mb-1"><i class="bi bi-envelope-fill me-2"></i>faithskiestudio@gmail.com</p>
+        <p class="mb-3"><i class="bi bi-whatsapp me-2"></i>089529916805</p>
+        <div class="d-flex gap-5 justify-content-center justify-content-md-start">
+          <a href="https://www.instagram.com/faisaladiiii_?igsh=MW1hbngxMmh6aDM5cQ%3D%3D&utm_source=qr" target="_blank"><img src="logo/ig.svg" alt="IG" width="40"></a>
+          <a href="https://www.tiktok.com/@skiestory?_t=ZS-8xQT61fT3Ul&_r=1" target="_blank"><img src="logo/tiktok.svg" alt="FB" width="40"></a>
+          <a href="https://www.threads.com/@faisaladiiii_?xmt=AQF0_Zc9ejnyQGFlcAbwxnuHcoE-6XE7ishzxc_mN0rteDk" target="_blank"><img src="logo/th.svg" alt="Threads" width="40"></a>
+          <a href="https://wa.me/6289529916805" target="_blank"><img src="logo/wa.svg" alt="WA" width="40"></a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Garis + Copyright -->
+    <hr class="my-4 border-dark">
+    <p class="text-center mb-0">&copy; 2025 Faisal Studio — All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

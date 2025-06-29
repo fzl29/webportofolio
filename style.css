@@ -1,0 +1,682 @@
+body {
+  background:#000000;
+  font-family: 'Orbitron', sans-serif;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.logo {
+  height: 70px;
+  width: auto;
+}
+
+/* home */
+
+.tool-floating-icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.tool-icon-floating {
+  position: absolute;
+  animation: floatIcon 8s ease-in-out infinite;
+  opacity: 0.8;
+  transition: transform 0.3s;
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.tool-icon:hover {
+  transform: scale(1.1);
+}
+
+@keyframes floatIcon {
+  0%   { transform: translateY(0px) rotate(0deg); }
+  50%  { transform: translateY(-15px) rotate(5deg); }
+  100% { transform: translateY(0px) rotate(-5deg); }
+}
+
+
+
+@keyframes floatBubble {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  50% {
+    transform: translate(30px, -20px) scale(1.1);
+  }
+  100% {
+    transform: translate(-20px, 30px) scale(0.95);
+  }
+}
+
+
+
+
+.blur-navbar {
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0) !important;
+  padding: 0.8rem 0;
+  z-index: 1000;
+}
+
+.navbar-nav{
+  color: #898989;
+  font-weight: 400;
+  transition: color 0.3s;
+}
+
+/* Gaya dasar untuk nav-link */
+.nav-link {
+    color: grey; /* Warna default teks */
+    transition: color 0.3s ease; /* Transisi halus untuk perubahan warna */
+}
+
+/* Gaya untuk nav-link yang aktif */
+.nav-link.active {
+    color: white; /* Warna terang/kontras saat aktif */
+    font-weight: bold; /* Tebalkan teks */
+    /* Anda juga bisa menambahkan border-bottom, background, dll. */
+    border-bottom: 2px solid white;
+}
+
+
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 1rem;
+    border-radius: 10px;
+  }
+}
+
+
+.neon-text {
+  color: #ffffff !important;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.hero {
+  height: 100vh;
+  padding-top: 120px;
+  background: radial-gradient(circle at center, #1c1c1c 0%, #000000 100%);
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #cccccc;
+}
+
+
+
+#scramble-text {
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 2px;
+  white-space: nowrap;
+}
+
+
+.btn-glow {
+  background-color: #ffffff;
+  color: #000;
+  border: none;
+  padding: 12px 24px;
+  font-weight: bold;
+  border-radius: 30px;
+  box-shadow: 0 0 20px #d6d6d688;
+  transition: all 0.3s ease;
+}
+
+.btn-glow:hover {
+  box-shadow: 0 0 30px #ffffff;
+  transform: scale(1.05);
+}
+
+
+.video-bg {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.video-bg video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  object-fit: fill;
+  /* filter: grayscale(100%);  */
+}
+
+
+
+/* section 2 */
+.section_tentang {
+  margin-top: 100px;
+  padding-top: 100px;
+  margin-bottom: 120px;
+}
+
+.foto-container {
+  width: 340px;
+  height: 430px;
+  border-radius: 5%;
+  overflow: hidden;
+  margin: 0 auto;
+  /* box-shadow: 0 0 40px rgba(252, 211, 77, 0.3); */
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.1s ease-out;
+}
+
+.foto-container video{
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  transition: transform 0.2s ease-out;
+}
+
+.foto-container:hover {
+  transform: scale(1.15);
+}
+.glass-card {
+  transition: transform 0.3s ease;
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+}
+
+.glass-card h5 {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.glass-card p {
+  color: #cccccc;
+  font-size: 0.95rem;
+}
+
+
+.glass-image-frame {
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  height: 220px; /* tinggi konsisten */
+}
+
+.glass-image {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+
+/* Video */
+
+.glass-video-frame {
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  height: 600px; /* cocok untuk video 9:16 */
+}
+
+.glass-video {
+  height: 100%;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+}
+
+/* button view portofolio */
+
+.btn-outline-warning {
+  border-color: #ffffff;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 8px 12px;
+  transition: 0.3s;
+  border-radius: 12px;
+}
+
+.btn-outline-warning:hover {
+  background-color: #ffffff;
+  color: #000;
+}
+
+
+/* section 3 */
+
+.glass-section {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(20px);
+  padding: 60px 0;
+}
+
+.neon-text {
+  color: #fcd34d;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(252, 211, 77, 0.8);
+}
+
+/* icon */
+.tool-icon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.tool-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Kontak */
+
+.neon-text {
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(252, 211, 77, 0.6);
+}
+
+
+.form-control {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.form-control::placeholder {
+  color: #aaa;
+}
+
+/* footer */
+
+.footer-custom {
+  background-color: #d5d5d5;
+  color: #000;
+  font-size: 0.95rem;
+}
+
+.footer-custom a {
+  transition: 0.3s ease;
+}
+
+.footer-custom a:hover {
+  color: #333;
+}
+
+.footer-custom ul {
+  padding-left: 0;
+}
+
+.footer-custom ul li {
+  margin-bottom: 6px;
+}
+
+.footer-custom img {
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2));
+  transition: transform 0.3s;
+}
+
+.footer-custom img:hover {
+  transform: scale(1.1);
+}
+
+
+/* Sponsor */
+
+.carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.sponsor-carousel{
+  background-color: #0F0F0F;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 2rem;
+  will-change: transform;
+}
+.sponsor-logo {
+  height: 60px;
+  width: 100px;
+  max-height: 60px;
+  object-fit: contain;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.sponsor-logo:hover {
+  opacity: 1;
+}
+
+
+/* my project */
+
+.angled-carousel {
+  background: linear-gradient(to bottom right, #000000, #282828);
+  overflow-x: hidden;
+}
+
+.card-glass {
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s ease;
+  padding: 1rem;
+}
+
+.tilted-card {
+  transform: rotate(-6deg);
+}
+
+.tilted-card:nth-child(even) {
+  transform: rotate(6deg);
+}
+
+.tilted-card:hover {
+  transform: scale(1.05) rotate(0deg);
+  z-index: 2;
+}
+
+
+
+/* Mockup section */
+
+.glass-cardmockup {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.glass-cardmockup:hover {
+  transform: translateY(-9px);
+}
+
+.mockup {
+   transition: transform 0.3s ease;
+   margin-left: -10px;
+}
+
+.mockup:hover {
+   transform: translateY(-9px);
+}
+
+.glass-frame {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 16px;
+  border: 3px solid rgba(255, 255, 255, 0.12);
+  height: 550px;
+  width: 70%;
+  margin-left: 100px;
+  margin-top: 10px;
+  position: relative;
+  overflow: visible; /* penting agar gambar keluar */
+}
+
+.mockup-shirt {
+  width: 150%;
+  max-width: none;
+  z-index: 2;
+  position: absolute;
+  top: -10%;
+  left: -25%;
+  transition: transform 0.3s ease;
+}
+
+.mockup-shirt:hover {
+transform: translateY(-45px);
+}
+.a4container {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.a4-box {
+  width: calc(33% - 12px);
+  aspect-ratio: 3/4;
+  font-size: 0.75rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid rgba(255, 255, 255, 0.12);
+}
+
+.display-photo {
+  width: 180%;
+  border-radius: 16px;
+  object-fit: fill;
+  margin-bottom: 1rem;
+  max-width: none;
+  z-index: 2;
+  position: absolute;
+  top: -10%;
+  left: -50%;
+  transition: transform 0.3s ease;
+}
+
+.display-photo:hover {
+  transform: translateY(-15px);
+}
+
+.glass-a4 {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 16px;
+  border: 3px solid rgba(255, 255, 255, 0.12);
+  height: 550px;
+  width: 80%;
+  margin-left: 70px;
+  margin-top: 60px;
+  position: relative;
+  overflow: visible;
+}
+
+.img-a4 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.img-a4:hover {
+  transform: scale(1.03);
+}
+
+
+
+.display-booth {
+  width: 140%;
+  border-radius: 16px;
+  object-fit: fill;
+  margin-bottom: 1rem;
+  max-width: none;
+  z-index: 2;
+  position: absolute;
+  top: -35%;
+  left: -15%;
+  transition: transform 0.3s ease;
+}
+
+.display-booth:hover {
+  transform: translateY(-15px);
+}
+
+/* partner */
+
+        .section-title {
+            font-weight: 700;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+        }
+
+        .section-title span {
+            color: #ffffff;
+            padding: 5px 15px;
+            border-radius: 5px;
+        }
+
+        .partner-logo-box {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            min-height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .partner-more {
+          font-family: 'Orbitron', sans-serif;
+          color: #000000;
+          font-size: 30px;
+  
+        }
+
+        .partner-logo-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        /* ===== BAGIAN PENTING UNTUK EFEK HITAM PUTIH ===== */
+        .partner-logo img {
+            max-width: 100%;
+            height: auto;
+            
+            /* 1. INI YANG MEMBUAT LOGO MENJADI HITAM PUTIH SECARA DEFAULT */
+            filter: grayscale(100%); 
+            
+            opacity: 0.8;
+            
+            /* 2. INI YANG MEMBUAT PERALIHAN WARNA MENJADI HALUS (SMOOTH) */
+            transition: filter 0.3s ease, opacity 0.3s ease;
+        }
+        
+        .partner-logo-box:hover .partner-logo img {
+            
+            /* 4. WARNA GAMBAR DIKEMBALIKAN KE ASLINYA (100% BERWARNA) */
+            filter: grayscale(0%); 
+            
+            opacity: 1;
+        }
+
+
+
+
+
+ /* projek */
+
+.auto-carousel {
+  overflow: hidden;
+  background: #0d0d0d;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 1.5rem;
+  animation: scroll-left 25s linear infinite;
+}
+
+.carousel-card {
+  flex: 0 0 auto;
+  aspect-ratio: 4 / 5;
+  width: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.408);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  transition: transform 0.3s ease;
+}
+
+.carousel-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-card:hover {
+  transform: scale(1.15);
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
+
+/* video portofolio */
+
